@@ -1,6 +1,6 @@
 {
   "name": "harker-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nodejs wrapper for the Harkerdev bell schedule API, serving data on Harker lunches, schedules, and events.",
   "main": "dist/index.js",
   "scripts": {
@@ -15,5 +15,9 @@
   },
   "files": [
     "dist/**/*"
-  ]
+  ],
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/gadhagod/HarkerDev-API-Client"
+  }
 }
