@@ -1,0 +1,19 @@
+{
+  "name": "harker-api",
+  "version": "1.0.0",
+  "description": "Nodejs wrapper for the Harkerdev bell schedule API, serving data on Harker lunches, schedules, and events.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Aarav Borthakur",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "typescript": "^4.3.2"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
