@@ -45,7 +45,7 @@ export class HarkerApi {
         var req = https.get(`${this.url}/schedule?day=${day}&month=${month}&year=${year}`, (httpRes: any) => {
             httpRes.on("data", (res: string | Uint8Array) => {
                 var data: object;
-                if (String(res.toString).toLowerCase().includes("no schedule")) {
+                if (String(res.toString()).toLowerCase().includes("no schedule")) {
                     data = {date: new Date().toISOString(), schedule: []};
                 } else {
                     data = JSON.parse(res.toString());
@@ -68,7 +68,7 @@ export class HarkerApi {
         var req = https.get(`${this.url}/events?day=${day}&month=${month}&year=${year}`, (httpRes: any) => {
             httpRes.on("data", (res: string | Uint8Array) => {
                 var data: object;
-                if (String(res.toString).toLowerCase().includes("no events")) {
+                if (String(res.toString()).toLowerCase().includes("no events")) {
                     data = {date: new Date().toISOString(), events: []};
                 } else {
                     data = JSON.parse(res.toString());
